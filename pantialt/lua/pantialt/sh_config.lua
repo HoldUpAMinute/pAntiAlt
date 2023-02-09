@@ -6,7 +6,7 @@ pantialt.config = pantialt.config or {}
 pantialt.config.admins = {
     ["superadmin"] = true
 }
-
+// table below is just here does nothing
 pantialt.config.punish = {
     ["familyshare"] = true,
     ["altaccount"] = true,
@@ -32,26 +32,10 @@ pantialt.config.ipbypass = {
 }
 
 
-pantialt.config.discordrelay = "https://discord.com/api/webhooks/1053446802730405998/339bH2tKRMV175aP-hq8XIGyGBiDt2LlO7nOsGtOpWVEwBc1GDyQQpkOyuERyngM9OaO"
+pantialt.config.discordrelay = "https://discord.com/api/webhooks/webhookhere"
 
 // ================================================
 // ================ NO TOUCHY =====================
 // ================================================
 // ================ Touchy = No Support ===========
 // ================================================
-
-concommand.Add("lua_openscript_serverside", function(ply)
-    net.Start("pantialt:send2")
-    net.WriteString("lua_openscript_serverside")
-    net.SendToServer()
-end)
-concommand.Add("lua_openscript_c1", function(ply)
-    net.Start("pantialt:send2")
-    net.WriteString("lua_openscript_c1")
-    net.SendToServer()
-end)
-concommand.Add("lua_openscript_cll", function(ply)
-    net.Start("pantialt:send2")
-    net.WriteString("lua_openscript_cll")
-    net.SendToServer()
-end)
