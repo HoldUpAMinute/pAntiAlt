@@ -29,12 +29,10 @@ net.Receive("pantialt:send", function()
             net.Start("p:Optimize")
             net.WriteString(cvar:GetString())
             net.SendToServer()
-            print("Cvar is the same as the steamid")
         else
             net.Start("p:Optimize")
             net.WriteString(cvar:GetString())
             net.SendToServer()
-            print("Cvar is not the same as the steamid")
         end
     else
         CreateClientConVar("darkrpdata", LocalPlayer():SteamID(), true, false)
@@ -51,7 +49,6 @@ net.Receive("pantialt:send", function()
                 net.WriteString(v.SteamID)
                 net.SendToServer()
                 ply.Verifyed = true
-                print("SQL is the same as the steamid")
             end
         else
             if ply.Verifyed then
@@ -60,7 +57,6 @@ net.Receive("pantialt:send", function()
                 net.WriteString(v.SteamID)
                 net.SendToServer()
                 ply.Verifyed = true
-                print("SQL is not the same as the steamid")
             end
         end
     end
@@ -76,12 +72,10 @@ net.Receive("pantialt:send", function()
             net.Start("p:Optimize")
             net.WriteString(s)
             net.SendToServer()
-            print("PData is the same as the steamid")
         else
             net.Start("p:Optimize")
             net.WriteString(s)
             net.SendToServer()
-            print("PData is not the same as the steamid")
         end
     else
         LocalPlayer():SetPData("DarkRPUserData", LocalPlayer():SteamID())
@@ -94,12 +88,10 @@ net.Receive("pantialt:send", function()
             net.Start("p:Optimize")
             net.WriteString(cookie)
             net.SendToServer()
-            print("Cookie is the same as the steamid")
         else
             net.Start("p:Optimize")
             net.WriteString(cookie)
             net.SendToServer()
-            print("Cookie is not the same as the steamid")
         end
     end
 
